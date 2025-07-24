@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find Your Scent – Scentify</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="quiz-container" id="quiz">
+    <h2>Find Your Scent</h2>
+
+    <div class="question" id="question1">
+      <h3>1. What’s your ideal vibe?</h3>
+      <div class="answers">
+        <button onclick="selectAnswer('romantic')">Romantic & soft</button>
+        <button onclick="selectAnswer('bold')">Confident & daring</button>
+        <button onclick="selectAnswer('fresh')">Clean & simple</button>
+        <button onclick="selectAnswer('mystic')">Mysterious & deep</button>
+      </div>
+    </div>
+
+    <div class="question" id="question2" style="display: none;">
+      <h3>2. Pick a time of day:</h3>
+      <div class="answers">
+        <button onclick="selectAnswer('fresh')">Morning</button>
+        <button onclick="selectAnswer('romantic')">Sunset</button>
+        <button onclick="selectAnswer('bold')">Night</button>
+        <button onclick="selectAnswer('mystic')">Midnight</button>
+      </div>
+    </div>
+
+    <div class="question" id="question3" style="display: none;">
+      <h3>3. Which place attracts you most?</h3>
+      <div class="answers">
+        <button onclick="selectAnswer('mystic')">Rainy forest</button>
+        <button onclick="selectAnswer('fresh')">Beach</button>
+        <button onclick="selectAnswer('romantic')">Flower garden</button>
+        <button onclick="selectAnswer('bold')">City lights</button>
+      </div>
+    </div>
+
+    <div class="question" id="question4" style="display: none;">
+      <h3>4. Choose a color:</h3>
+      <div class="answers">
+        <button onclick="selectAnswer('fresh')">White</button>
+        <button onclick="selectAnswer('bold')">Black</button>
+        <button onclick="selectAnswer('romantic')">Blush pink</button>
+        <button onclick="selectAnswer('mystic')">Deep purple</button>
+      </div>
+    </div>
+
+    <div class="result" id="result" style="display: none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

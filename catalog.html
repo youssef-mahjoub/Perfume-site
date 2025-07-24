@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfume Catalog – Scentify</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="logo_catalog">
+        <a href="index.html">
+            <div>
+                <img src="images/logo.png " class="img_logo" alt="">
+            </div>
+        </a>
+    </nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quiz.html">Find Your Scent</a>
+      <a href="catalog.html">Shop</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2 style="text-align: center; margin-top: 30px;">Perfume Catalog</h2>
+
+    <div class="filter-buttons">
+      <button onclick="filterPerfumes('all')">All</button>
+      <button onclick="filterPerfumes('fresh')">Fresh</button>
+      <button onclick="filterPerfumes('romantic')">Romantic</button>
+      <button onclick="filterPerfumes('bold')">Bold</button>
+      <button onclick="filterPerfumes('mystic')">Mystic</button>
+    </div>
+
+    <div class="perfume-grid" id="perfumeContainer">
+      <!-- Example perfumes -->
+      <div class="perfume-card" data-category="fresh">
+        <img src="images/ocean_drift.jpg" alt="Ocean Drift">
+        <div class="info">
+          <h3>Ocean Drift</h3>
+          <p>Fresh, light, and ideal for morning walks or beach vibes.</p><br>
+          <p class="ocean_drift_price">65 DT</p>
+          <button class="shop-btn">Shop Now</button>
+        </div>
+      </div>
+
+      <div class="perfume-card" data-category="romantic">
+        <img src="images/Midnight_Bloom.jpg" alt="Midnight Bloom">
+        <div class="info">
+          <h3>Midnight Bloom</h3>
+          <p>A dreamy floral scent for soft, romantic moments.</p><br>
+          <p class="price">65 DT</p>
+          <button class="shop-btn">Shop Now</button>
+        </div>
+      </div>
+
+      <div class="perfume-card" data-category="bold">
+        <img src="images/Noir_Muse.webp" alt="Noir Muse">
+        <div class="info">
+          <h3>Noir Muse</h3>
+          <p>Dark, powerful and seductive. Make a bold entrance.</p><br>
+          <p class="price">65 DT</p>
+          <button class="shop-btn">Shop Now</button>
+        </div>
+      </div>
+
+      <div class="perfume-card" data-category="mystic">
+        <img src="images/Velvet_Shadow.webp" alt="Velvet Shadow">
+        <div class="info">
+          <h3>Velvet Shadow</h3>
+          <p>Spicy, woody, and enigmatic. Perfect for mysterious souls.</p><br>
+          <p class="price">65 DT</p>
+          <button class="shop-btn">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p style="text-align: center; padding: 30px;">&copy; 2025 Scentify. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
