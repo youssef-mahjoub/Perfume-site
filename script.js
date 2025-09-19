@@ -26,8 +26,8 @@ const scores = {
       const topScent = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
       let message = "";
 
-      switch (topScent) {
-        case "fresh":
+      switch (topScent) {   
+        case "fresh":    
           message = "✨ <strong>Ocean Drift</strong>: Clean, energizing, and refreshing. Perfect for daytime and minimalist lovers.";
           break;
         case "romantic":
@@ -53,4 +53,8 @@ const scores = {
           card.classList.add('hidden');
         }
       });
+    }
+    function password(){
+      let username=document.getElementById("username").value;
+
     }

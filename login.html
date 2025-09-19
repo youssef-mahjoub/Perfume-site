@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login – Scentify</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="images/logo.png" class="img_logo" alt="Scentify Logo" /></a>
+  </header>
+
+  <main class="login-container">
+    <h2>Login to your account</h2>
+
+    <form id="loginForm" action="login.php" method="POST">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+  </main>
+  <script src="script.js"></script>
+
+</body>
+</html>
