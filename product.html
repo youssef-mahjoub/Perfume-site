@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details – Scentify</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" class="img_logo" alt="Scentify Logo">
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quiz.html">Find Your Scent</a>
+      <a href="catalog.html">Shop</a>
+      <a href="login.html" class="btn login-btn">Login</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="product-details" id="productDetails">
+
+    </section>
+
+    <section class="order-form">
+      <h3>Order Now</h3>
+      <form action="order.php" method="POST">
+        <input type="hidden" name="product" id="productName">
+        <input type="hidden" name="price" id="productPrice">
+
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="address">Address</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="phone">Phone</label><br>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <button type="submit" class="btn">Confirm Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Scentify. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const products = {
+      ocean_drift: {
+        name: "Ocean Drift",
+        description: "Fresh, light, and ideal for morning walks or beach vibes.",
+        price: "65 DT",
+        img: "images/ocean_drift.jpg"
+      },
+      midnight_bloom: {
+        name: "Midnight Bloom",
+        description: "A dreamy floral scent for soft, romantic moments.",
+        price: "65 DT",
+        img: "images/Midnight_Bloom.jpg"
+      },
+      noir_muse: {
+        name: "Noir Muse",
+        description: "Dark, powerful and seductive. Make a bold entrance.",
+        price: "65 DT",
+        img: "images/Noir_Muse.webp"
+      },
+      velvet_shadow: {
+        name: "Velvet Shadow",
+        description: "Spicy, woody, and enigmatic. Perfect for mysterious souls.",
+        price: "65 DT",
+        img: "images/Velvet_Shadow.webp"
+      }
+    };
+
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get("id");
+
+    if (products[productId]) {
+      const product = products[productId];
+
+
+      document.getElementById("productDetails").innerHTML = `
+        <img src="${product.img}" alt="${product.name}" class="product-img">
+        <div class="product-info">
+          <h2>${product.name}</h2>
+          <p>${product.description}</p>
+          <p class="price">${product.price}</p>
+        </div>
+      `;
+
+
+      document.getElementById("productName").value = product.name;
+      document.getElementById("productPrice").value = product.price;
+    } else {
+      document.getElementById("productDetails").innerHTML = "<p>Product not found.</p>";
+    }
+  </script>
+
+</body>
+</html>
+    

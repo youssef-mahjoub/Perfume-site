@@ -8,17 +8,16 @@
 <body>
 
   <header>
-    <nav class="logo_catalog">
-        <a href="index.html">
-            <div>
-                <img src="images/logo.png " class="img_logo" alt="">
-            </div>
-        </a>
-    </nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" class="img_logo" alt="Scentify Logo">
+      </a>
+    </div>
     <nav>
       <a href="index.html">Home</a>
       <a href="quiz.html">Find Your Scent</a>
       <a href="catalog.html">Shop</a>
+      <a href="login.html" class="btn login-btn">Login</a>
     </nav>
   </header>
 
@@ -34,45 +33,37 @@
     </div>
 
     <div class="perfume-grid" id="perfumeContainer">
+      
       <div class="perfume-card" data-category="fresh">
         <img src="images/ocean_drift.jpg" alt="Ocean Drift">
-        <div class="info">
-          <h3>Ocean Drift</h3>
-          <p>Fresh, light, and ideal for morning walks or beach vibes.</p><br>
-          <p class="ocean_drift_price">65 DT</p>
-          <button class="shop-btn">Shop Now</button>
-        </div>
+        <h3>Ocean Drift</h3>
+        <p>Fresh | Clean | Daytime</p><br>
+        <p class="price">65 DT</p>
+        <button class="shop-btn" onclick="window.location.href='product.html?id=ocean_drift'">Shop Now</button>
       </div>
-          
+
       <div class="perfume-card" data-category="romantic">
         <img src="images/Midnight_Bloom.jpg" alt="Midnight Bloom">
-        <div class="info">
-          <h3>Midnight Bloom</h3>
-          <p>A dreamy floral scent for soft, romantic moments.</p><br>
-          <p class="price">65 DT</p>
-          <button class="shop-btn">Shop Now</button>
-        </div>
+        <h3>Midnight Bloom</h3>
+        <p>Floral | Romantic | Evening</p><br>
+        <p class="price">65 DT</p>
+        <button class="shop-btn" onclick="window.location.href='product.html?id=midnight_bloom'">Shop Now</button>
       </div>
-
       <div class="perfume-card" data-category="bold">
         <img src="images/Noir_Muse.webp" alt="Noir Muse">
-        <div class="info">
-          <h3>Noir Muse</h3>
-          <p>Dark, powerful and seductive. Make a bold entrance.</p><br>
-          <p class="price">65 DT</p>
-          <button class="shop-btn">Shop Now</button>
-        </div>
+        <h3>Noir Muse</h3>
+        <p>Dark | Powerful | Seductive</p><br>
+        <p class="price">65 DT</p>
+        <button class="shop-btn" onclick="window.location.href='product.html?id=noir_muse'">Shop Now</button>
       </div>
-
       <div class="perfume-card" data-category="mystic">
         <img src="images/Velvet_Shadow.webp" alt="Velvet Shadow">
-        <div class="info">
-          <h3>Velvet Shadow</h3>
-          <p>Spicy, woody, and enigmatic. Perfect for mysterious souls.</p><br>
-          <p class="price">65 DT</p>
-          <button class="shop-btn">Shop Now</button>
-        </div>
+        <h3>Velvet Shadow</h3>
+        <p>Spicy | Woody | Enigmatic</p><br>
+        <p class="price">65 DT</p>
+        <button class="shop-btn" onclick="window.location.href='product.html?id=velvet_shadow'">Shop Now</button>
       </div>
+
     </div>
   </section>
 

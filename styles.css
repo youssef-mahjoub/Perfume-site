@@ -278,3 +278,98 @@ nav a {
 .register-container a:hover {
   text-decoration: underline;
 }
+/* ---------------- PRODUCT PAGE ---------------- */
+.product-details {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fffaf7;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.product-details img.product-img {
+  width: 350px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.product-details .product-info {
+  flex: 1;
+}
+
+.product-details h2 {
+  color: #b18c6f;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.product-details p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.product-details .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #a07a5d;
+  margin-top: 10px;
+}
+
+/* ---------------- ORDER FORM ---------------- */
+.order-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fffaf7;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.order-form h3 {
+  text-align: center;
+  color: #b18c6f;
+  margin-bottom: 25px;
+}
+
+.order-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+.order-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #d9c7b3;
+  border-radius: 10px;
+  outline: none;
+}
+
+.order-form input:focus {
+  border-color: #b18c6f;
+}
+
+.order-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #b18c6f;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-form button:hover {
+  background-color: #a07a5d;
+}
+
